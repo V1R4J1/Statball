@@ -14,7 +14,7 @@ options.add_argument('--headless')
 driver = webdriver.Chrome(options=options)
 
 # Suppress browser console errors and warnings
-options.add_argument('--log-level=3')
+options.add_argument('--log-level=3')#
 
 driver = webdriver.Chrome(options=options)
 
@@ -88,7 +88,7 @@ def storefile(name, nationality, position, team, age, games, minutes, goals, ass
 
     #Write data to append into file
     writer.writerow(data_to_append)
-    
+
     #Close file
     file.close()
 
